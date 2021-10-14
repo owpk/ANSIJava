@@ -3,7 +3,9 @@
 ```
 ./gradlew publishToMavenLocal
 ```
+
 - add dependency:
+
 > maven
 ```xml
 <dependency>
@@ -12,7 +14,9 @@
     <version>1.0</version>
 </dependency>
 ```
+
 > gradle
+
 ```groovy
 repositories {
    maven { url "https://jitpack.io" }
@@ -22,16 +26,17 @@ dependencies {
    implementation 'com.github.owpk:ANSIJava:1.0'
 }
 ```
+
 - usage:
 
 ```java
-import org.owpk.ansi.AnsiJava;
+import org.owpk.ansi.ANSIJava;
 import org.owpk.ansi.Color;
 
 publis class MyClass {
 
    publis static void main(String... args) {
-      String coloredString = AnsiJava.colorize("Hello world!", Color.BLUE);
+      String coloredString = ANSIJava.colorize("Hello world!", Color.BLUE);
       System.out.println(coloredString);
    }
 }
