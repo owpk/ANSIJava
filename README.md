@@ -3,15 +3,19 @@
 ```
 ./gradlew publishToMavenLocal
 ```
+
 - add dependency:
+
 <details>
     <summary>maven</summary>
     <p>
+        ```xml
         <dependency>
             <groupId>org.owpk</groupId>
             <artifactId>ansi</artifactId>
             <version>1.0</version>
         </dependency>
+        ```
     </p>
 </details>
 
@@ -19,6 +23,7 @@
 <details>
     <summary>gradle</summary>
     <p>
+        ```groovy
         repositories {
            mavenLocal()
         }
@@ -26,6 +31,7 @@
         dependencies {
            implementation 'org.owpk:ansi:1.0'
         }
+        ```
     </p>
 </details>
 
