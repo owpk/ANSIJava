@@ -15,7 +15,7 @@
 > gradle
 ```groovy
 repositories {
-   mavenCentral()
+   mavenLocal()
 }
 
 dependencies {
