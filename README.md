@@ -29,10 +29,10 @@
         dependencies {
            implementation 'org.owpk:ansi:1.0'
         }
+        ```
     </p>
 </details>
 
-```
 - usage:
 
 ```java
