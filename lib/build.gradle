@@ -1,0 +1,17 @@
+apply plugin:'java'
+apply plugin:'maven-publish'
+
+jar {
+    archivesBaseName = 'ANSI-java'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'org.owpk'
+            artifactId = 'ansi'
+            version = '1.0'
+            from components.java
+        }
+    }
+}
