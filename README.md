@@ -15,11 +15,11 @@
 > gradle
 ```groovy
 repositories {
-   mavenLocal()
+   maven { url "https://jitpack.io" }
 }
 
 dependencies {
-   implementation 'org.owpk.ansi:ansi:1.0'
+   implementation 'com.github.owpk:ANSIJava:1.0'
 }
 ```
 - usage:
@@ -34,7 +34,6 @@ publis class MyClass {
       String coloredString = AnsiJava.colorize("Hello world!", Color.BLUE);
       System.out.println(coloredString);
    }
-
 }
 ```
 
