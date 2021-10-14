@@ -5,8 +5,8 @@ jar {
     archivesBaseName = 'ANSI-java'
 }
 
-sourceCompatibility 11
-targetCompatibility 11
+sourceCompatibility = '11'
+targetCompatibility = '11'
 
 publishing {
     publications {
