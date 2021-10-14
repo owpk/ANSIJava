@@ -3,10 +3,28 @@
 ```
 ./gradlew publishToMavenLocal
 ```
+- add dependency:
+> maven
+```xml
+<dependency>
+    <groupId>org.owpk</groupId>
+    <artifactId>ansi</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+> gradle
+```groovy
+repositories {
+   mavenCentral()
+}
 
+dependencies {
+   implementation 'org.owpk.ansi:ansi:1.0'
+}
+```
 - usage:
 
-```
+```java
 import org.owpk.ansi.AnsiJava;
 import org.owpk.ansi.Color;
 
