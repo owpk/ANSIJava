@@ -6,34 +6,26 @@
 
 - add dependency:
 
-<details>
-    <summary>maven</summary>
-    <p>
-        ```xml
-        <dependency>
-            <groupId>org.owpk</groupId>
-            <artifactId>ansi</artifactId>
-            <version>1.0</version>
-        </dependency>
-        ```
-    </p>
-</details>
+> maven
+```xml
+<dependency>
+    <groupId>org.owpk</groupId>
+    <artifactId>ansi</artifactId>
+    <version>1.0</version>
+</dependency>
+```
 
+> gradle
 
-<details>
-    <summary>gradle</summary>
-    <p>
-        ```groovy
-        repositories {
-           mavenLocal()
-        }
+```groovy
+repositories {
+   mavenLocal()
+}
 
-        dependencies {
-           implementation 'org.owpk:ansi:1.0'
-        }
-        ```
-    </p>
-</details>
+dependencies {
+   implementation 'org.owpk:ansi:1.0'
+}
+```
 
 - usage:
 
