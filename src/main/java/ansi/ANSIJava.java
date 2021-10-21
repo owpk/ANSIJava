@@ -7,9 +7,16 @@ public final class ANSIJava {
 
     private ANSIJava() {}
 
+    private static String format(String input, String format) {
+        if (checkForEmptyString(input) && checkForEmptyString(format)) {
+            return String.format(format, input);
+        }
+        return "";
+    }
+
     public static String colorize(List<String> list, Color color, String delimiter, String format) {
         if (checkForEmptyList(list))
-            return String.format(format, list.stream().map(x -> colorize(x, color)).collect(Collectors.joining(delimiter)));
+            return list.stream().map(x -> colorize(format(x, format), color)).collect(Collectors.joining(delimiter));
         else return "";
     }
 
@@ -24,7 +31,7 @@ public final class ANSIJava {
     public static String colorize(List<String> list, int colorIndex, String delimiter, String format) {
         checkColorIdx(colorIndex);
         if (checkForEmptyList(list))
-            return String.format(format, list.stream().map(x -> colorize(x, colorIndex)).collect(Collectors.joining(delimiter)));
+            return list.stream().map(x -> colorize(format(x, format), colorIndex)).collect(Collectors.joining(delimiter));
         else return "";
     }
 
@@ -33,8 +40,9 @@ public final class ANSIJava {
     }
 
     public static String colorize(String input, Color color, String format) {
-        if (checkForEmptyString(input))
-            return String.format(format, colorize(input, color));
+        if (checkForEmptyString(input)) {
+            return colorize(format(input, format), color);
+        }
         else return "";
     }
 
@@ -47,6 +55,9 @@ public final class ANSIJava {
     }
 
     public static String colorize(String input, Color color) {
+        if (color == null) {
+            color = Color.BLUE;
+        }
         return colorize(input, color.getInd());
     }
 
