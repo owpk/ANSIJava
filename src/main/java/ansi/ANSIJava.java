@@ -39,7 +39,7 @@ public final class ANSIJava {
     }
 
     private static boolean checkForEmptyString(String input) {
-        return input != null && !input.isBlank();
+        return input != null && !input.equals("");
     }
 
     private static boolean checkForEmptyList(List<String> list) {

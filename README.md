@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-   implementation 'com.github.owpk:ANSIJava:1.5'
+   implementation 'com.github.owpk:ANSIJava:1.7'
    // or 'com.github.owpk:ANSIJava:master-SNAPSHOT'
 }
 ```
