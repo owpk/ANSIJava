@@ -8,6 +8,13 @@
 
 > maven
 ```xml
+<repositories>
+	<repository>
+		 <id>jitpack.io</id>
+		 <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+
 <dependency>
     <groupId>org.owpk</groupId>
     <artifactId>ansi</artifactId>
