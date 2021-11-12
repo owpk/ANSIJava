@@ -11,7 +11,7 @@
 <dependency>
     <groupId>org.owpk</groupId>
     <artifactId>ansi</artifactId>
-    <version>1.0</version>
+    <version>1.8</version>
 </dependency>
 ```
 
