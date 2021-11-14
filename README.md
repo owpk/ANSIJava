@@ -18,7 +18,7 @@
 <dependency>
     <groupId>org.owpk</groupId>
     <artifactId>ansi</artifactId>
-    <version>1.8</version>
+    <version>1.9</version>
 </dependency>
 ```
 
@@ -30,8 +30,7 @@ repositories {
 }
 
 dependencies {
-   implementation 'com.github.owpk:ANSIJava:1.8'
-   // or 'com.github.owpk:ANSIJava:master-SNAPSHOT'
+   implementation 'com.github.owpk:ANSIJava:1.9'
 }
 ```
 
